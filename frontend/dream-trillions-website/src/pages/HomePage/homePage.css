@@ -1,0 +1,38 @@
+.home-container {
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.home-bg-wrapper {
+  width: 95%;
+  max-width: 1200px;
+  overflow: hidden; /* REQUIRED for border-radius */
+  border-radius: 20px;
+}
+
+.home-bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+.home-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.home-overlay p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}

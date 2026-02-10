@@ -1,0 +1,70 @@
+.job-positions-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .job-positions-container h2 {
+    font-size:24px;
+    color:#170547;
+    margin-bottom: 20px;
+  }
+  
+  .job-positions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .job-positions-table th,
+  .job-positions-table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+  }
+  
+  .job-positions-table th {
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .job-positions-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .apply-btn {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .apply-btn:hover {
+    background-color: #e07b00;
+  }
+  
+  @media (max-width: 768px){
+    .job-positions-container {
+        width: 100%;
+       
+      }
+    .job-positions-container h2 {
+        font-size:22px;}
+
+   .job-positions-table th,
+  .job-positions-table td {
+    padding: 12px 15px;
+    text-align: center;font-size: 14px;
+    border: 1px solid #ffffff;
+  }
+
+
+  .apply-btn {
+    
+    font-size: 12;
+   
+  }
+  }

@@ -1,0 +1,223 @@
+
+.job-description-container {
+    padding: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .job-requirements {
+    
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+
+  .job-requirements h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .job-requirements ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .job-requirements li {
+    color: #5f5958;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  .job-requirements strong {
+    color: #2C3E50;
+  }
+  
+
+  .close-btn {
+    background-color: #f85d4b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .close-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .apply-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-btn:hover {
+    background-color: #2980b9;
+  }
+
+  .job-positions-container {
+    margin-top: 20px;
+  }
+  
+  .job-positions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .job-positions-table th,
+  .job-positions-table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .job-positions-table th {
+    background-color: #f2f2f2;
+    color: #2c3e50;
+  }
+  
+  .job-positions-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .job-positions-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+ 
+  .job-positions-container,
+  .job-requirements {
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .job-positions-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column; 
+      width: 100%;
+    
+    }
+  
+    .job-positions-container h2 {
+      font-size: 20px;
+      text-align:justify; 
+    }
+  
+    .job-positions-table {
+   
+      width: 100%;
+      max-width: 400px; 
+      overflow-x: auto;
+      margin: 0 auto; 
+    }
+  
+    .job-positions-table thead {
+      display: none; 
+    }
+  
+    .job-positions-table tr {
+     
+      margin-bottom: 10px;
+    }
+  
+    .job-positions-table td {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      padding: 12px 15px;
+      font-size: 15px;
+      border: 1px solid #ffffff;
+    }
+  
+    .job-positions-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .job-requirements h4 {
+        font-size: 18px;
+        
+      }
+
+    .job-requirements li {
+        font-size: 14px;
+       
+      }
+      
+  }
+
+  @media (max-width: 420px) {
+    .job-positions-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column; 
+      width: 80%;
+     
+    }
+  
+    .job-positions-container h2 {
+      font-size: 18px;
+      text-align: justify; 
+    }
+  
+    .job-positions-table {
+      width: 100%;
+      max-width: 300px; 
+    
+    }
+  
+    .job-positions-table thead {
+      display: none;
+    }
+  
+    .job-positions-table tr {
+      display: block; 
+      margin-bottom: 8px; 
+    }
+  
+    .job-positions-table td {
+      display: flex;
+      justify-content:center; 
+      align-items: center;
+      padding: 10px;
+      font-size: 12px; 
+      border: 1px solid #ffffff;
+    }
+  
+    .job-positions-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-align: center;
+    }
+    .job-description-container {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .job-requirements li {
+        font-size: 14px;
+       
+      }
+  }
+  
