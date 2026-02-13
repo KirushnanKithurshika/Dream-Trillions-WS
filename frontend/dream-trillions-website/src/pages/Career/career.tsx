@@ -1,4 +1,3 @@
-import React from 'react';
 import CareerBG from '../../assets/CareerBG.png';
 import './career.css';
 
@@ -16,7 +15,7 @@ const Careers = () => {
       >
         <div className="careerpageheadsubhead">
           <div className="careerpage-subheading">
-            Build Your Future with Dream Trillions 🚀
+            Build Your Future with Dream Trillions 
           </div>
         </div>
       </div>

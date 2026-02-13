@@ -71,10 +71,10 @@ const Navbar: React.FC = () => {
             <li><NavLink to="/services/mobile" className={navLinkClass}>Mobile App Development</NavLink></li>
             <li><NavLink to="/services/ui-ux" className={navLinkClass}>UI / UX Design</NavLink></li>
             <li><NavLink to="/services/cloud" className={navLinkClass}>Cloud & IT Solutions</NavLink></li>
+             <li><NavLink to="/services/solar-installation" className={navLinkClass}>Solar Installation</NavLink></li>
           </ul>
         </li>
 
-        <li><NavLink to="/solutions" className={navLinkClass}>Solutions</NavLink></li>
         <li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li>
         <li><NavLink to="/careers" className={navLinkClass}>Careers</NavLink></li>
         <li><NavLink to="/blog" className={navLinkClass}>Blog</NavLink></li>

@@ -42,16 +42,16 @@
 .careerpage {
     padding:40px;
     background:blur;
-    font-size: 60px; /* Adjust size as needed */
-    color: rgb(255, 255, 255); /* Ensure visibility */
-    font-weight: bold; /* Make it bold */
+    font-size: 60px; 
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
     text-align: center;
     
   }
 .careerpage-subheading{
     padding:20px;
     font-size: 20px; 
-    color: rgb(255, 255, 255); 
+    color: rgb(26, 6, 81); 
     font-weight: bold; 
     text-align: center;
 
