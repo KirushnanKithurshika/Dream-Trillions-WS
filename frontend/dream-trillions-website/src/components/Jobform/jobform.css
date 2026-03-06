@@ -1,4 +1,4 @@
-/* General styling for the job application form */
+/* General styling for the job application form
 .job-apply-form-container {
     max-width: 600px;
     min-width:fit-content;
@@ -148,7 +148,7 @@
   }
   
   /* Optional: Style the form container when blurred */
-  .job-apply-form-container {
+  /* .job-apply-form-container {
     transition: all 0.3s ease;
   }
   @media (max-width: 768px){
@@ -213,4 +213,4 @@
          
        
       }
-  }
+  } */ 
