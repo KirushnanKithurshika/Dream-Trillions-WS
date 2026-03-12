@@ -210,7 +210,7 @@ const JobCareers: React.FC = () => {
     <div className="job-description-container">
       <div className="job-positions-container">
         <div className="job-section-head">
-          <h2>Open Positions</h2>
+          <div>Open Positions</div>
           <p>Explore available roles and apply for the opportunity that fits you best.</p>
         </div>
 

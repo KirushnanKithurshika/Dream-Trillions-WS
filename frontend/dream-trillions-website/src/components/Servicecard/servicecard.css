@@ -1,0 +1,184 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+overflow-x:hidden;
+}
+
+
+/* GRID */
+
+.servicecards-grid{
+width:100%;
+max-width:1300px;
+margin:10px auto;
+padding:0 24px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+
+/* CARD */
+
+.servicecards-card{
+
+position:relative;
+padding:30px 25px;
+border-radius:20px;
+background:linear-gradient(
+145deg,
+#ffffff,
+#f4f6fb
+);
+text-align: left;
+border:1px solid rgba(0,0,0,0.04);
+box-shadow:
+0 10px 25px rgba(0,0,0,0.06);
+transition:all .35s ease;
+cursor:pointer;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+min-height:260px;
+
+overflow:hidden;
+}
+
+
+.servicecards-card:hover{
+
+transform: scale(1.02);
+
+box-shadow:
+0 30px 60px rgba(0,0,0,0.15);
+}
+
+
+.servicecards-number{
+
+font-size:36px;
+font-weight:700;
+
+color:#103163;
+
+}
+
+
+/* TITLE */
+
+.servicecards-title{
+
+font-size:26px;
+font-weight:700;
+
+color:#21345e;
+
+margin-bottom:1px;
+}
+
+
+/* DESCRIPTION */
+
+.servicecards-desc{
+
+font-size:15px;
+line-height:1.7;
+
+color:#4b5563;
+}
+
+
+/* ARROW CIRCLE */
+
+.servicecards-arrow{
+
+margin-top:20px;
+
+width:42px;
+height:42px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:black;
+
+color:white;
+
+font-size:16px;
+
+transition:all .3s ease;
+}
+
+
+/* ARROW HOVER */
+
+.servicecards-card:hover .servicecards-arrow{
+transform:translateX(6px);
+background:#ffffff;
+border:#362eca 5px solid;
+color:black;
+}
+
+/* SERVICE ICON */
+
+.servicecards-icon{
+
+width:44px;
+height:44px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:12px;
+
+background:#eef2ff;
+
+color:#362eca;
+
+font-size:26px;
+
+margin-bottom:16px;
+}
+/* TABLET */
+
+@media (max-width:1024px){
+
+.servicecards-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* MOBILE */
+
+@media (max-width:640px){
+
+.servicecards-grid{
+grid-template-columns:1fr;
+gap:22px;
+padding:0 18px;
+margin-top: -40px;
+}
+
+.servicecards-card{
+padding:28px 24px;
+
+}
+
+.servicecards-title{
+font-size:20px;
+}
+
+.servicecards-desc{
+font-size:14px;
+}
+
+}

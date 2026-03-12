@@ -3,11 +3,18 @@ import { NavLink, useLocation } from "react-router-dom";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 const Navbar: React.FC = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+
   const navRef = useRef<HTMLDivElement | null>(null);
   const location = useLocation();
+
+  /* close menu when clicking outside */
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -20,9 +27,12 @@ const Navbar: React.FC = () => {
         setServicesOpen(false);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [menuOpen, servicesOpen]);
+
+  /* close when route changes */
 
   useEffect(() => {
     setMenuOpen(false);
@@ -34,58 +44,90 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar" ref={navRef}>
+
       {/* Logo */}
+
       <div className="navbar-logo">
         <NavLink to="/">
-          <img src={logo} alt="Dream Trillions Logo" className="logo" />
+          <img src={logo} alt="Dream Trillions Logo" />
         </NavLink>
       </div>
 
       {/* Hamburger */}
+
       <div
         className={`hamburger ${menuOpen ? "open" : ""}`}
-        onClick={() => setMenuOpen((prev) => !prev)}
+        onClick={() => setMenuOpen(!menuOpen)}
       >
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      {/* Navbar Links */}
-      <ul className={`navbar-links ${menuOpen ? "show" : ""}`}>
-        <li><NavLink to="/" className={navLinkClass}>Home</NavLink></li>
-        <li><NavLink to="/about" className={navLinkClass}>About Us</NavLink></li>
+      {/* Links */}
 
-        <li
-          className={`dropdown ${servicesOpen ? "open" : ""}`}
-          onClick={() => setServicesOpen((prev) => !prev)}
-        >
-          
-          <span className="nav-link">
-            Services{" "}
-            <span className={`arrow ${servicesOpen ? "up" : "down"}`}></span>
-          </span>
+      <ul className={`navbar-links ${menuOpen ? "show" : ""}`}>
+
+        <li>
+          <NavLink to="/" className={navLinkClass}>Home</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/about" className={navLinkClass}>About Us</NavLink>
+        </li>
+
+        {/* SERVICES */}
+
+        <li className={`dropdown ${servicesOpen ? "open" : ""}`}>
+
+          <div
+            className="services-header"
+            onClick={() => setServicesOpen(!servicesOpen)}
+          >
+
+            <NavLink
+              to="/services"
+              className={navLinkClass}
+              onClick={(e) => e.stopPropagation()}
+            >
+              Services
+            </NavLink>
+
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className="services-arrow"
+            />
+
+          </div>
+
           <ul className="dropdown-menu">
-            <li><NavLink to="/services/software" className={navLinkClass}>Software Development</NavLink></li>
-            <li><NavLink to="/services/web" className={navLinkClass}>Web Development</NavLink></li>
-            <li><NavLink to="/services/mobile" className={navLinkClass}>Mobile App Development</NavLink></li>
-            <li><NavLink to="/services/ui-ux" className={navLinkClass}>UI / UX Design</NavLink></li>
-            <li><NavLink to="/services/cloud" className={navLinkClass}>Cloud & IT Solutions</NavLink></li>
-             <li><NavLink to="/services/solar-installation" className={navLinkClass}>Solar Installation</NavLink></li>
+
+            <li><NavLink to="/services/software">Software Development</NavLink></li>
+            <li><NavLink to="/services/web">Web Development</NavLink></li>
+            <li><NavLink to="/services/mobile">Mobile App Development</NavLink></li>
+            <li><NavLink to="/services/ui-ux">UI / UX Design</NavLink></li>
+            <li><NavLink to="/services/cloud">Cloud & IT Solutions</NavLink></li>
+            <li><NavLink to="/services/solar-installation">Renewable Energy solutions</NavLink></li>
+
           </ul>
+
         </li>
 
         <li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li>
         <li><NavLink to="/careers" className={navLinkClass}>Careers</NavLink></li>
         <li><NavLink to="/blog" className={navLinkClass}>Blog</NavLink></li>
         <li><NavLink to="/contact" className={navLinkClass}>Contact</NavLink></li>
+
       </ul>
+
+      {/* CTA */}
 
       <div className="navbar-cta">
         <NavLink to="/get-quote" className="cta-button">
           Get a Quote
         </NavLink>
       </div>
+
     </nav>
   );
 };
