@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/navbar";
 import bgImage from "../assets/BG2.png";
 import "./MainLayout.css";
+import Footer from "../components/Footer/footer";
 
 const MainLayout = () => {
   return (
@@ -10,6 +11,7 @@ const MainLayout = () => {
     >
       <Navbar />
       <Outlet />
+      <Footer/>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import ServiceCards from "../../components/Servicecard/servicecard";
 const Services: React.FC = () => {
     return (
         <>
-            <section className="service-section">
+            <section className="career-section">
 
                 {/* background layer */}
                 <div

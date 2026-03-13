@@ -1,0 +1,259 @@
+.footer{
+
+width:100%;
+background:#ffffff;
+
+margin-top:100px;
+
+border-top:1px solid #e5e7eb;
+
+}
+
+
+/* CONTAINER */
+
+.footer-container{
+
+max-width:1200px;
+margin:auto;
+
+padding:60px 20px;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:40px;
+
+}
+
+
+/* LOGO */
+
+.footer-logo{
+
+font-size:22px;
+font-weight:700;
+
+color:#21345e;
+
+margin-bottom:12px;
+
+}
+
+
+/* TEXT */
+
+.footer-text{
+
+text-align:justify;
+
+font-size:14px;
+line-height:1.7;
+
+color:#6b7280;
+
+margin-bottom:18px;
+
+}
+
+
+/* SOCIAL ICONS */
+
+.footer-social{
+
+display:flex;
+gap:14px;
+
+}
+
+.footer-social a{
+
+width:36px;
+height:36px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:10px;
+
+background:#f3f4f6;
+
+color:#1f2937;
+
+transition:all .25s ease;
+
+}
+
+.footer-social a:hover{
+
+background:#362eca;
+color:white;
+
+transform:translateY(-3px);
+
+}
+
+
+/* COLUMN HEADINGS */
+
+.footer-col h3{
+
+font-size:16px;
+font-weight:600;
+
+margin-bottom:14px;
+
+color:#21345e;
+
+}
+
+
+/* LINKS */
+
+.footer-col ul{
+
+list-style:none;
+padding:0;
+
+}
+
+.footer-col li{
+
+margin-bottom:10px;
+
+}
+
+.footer-col a{
+
+text-decoration:none;
+
+font-size:14px;
+
+color:#6b7280;
+
+transition:all .2s ease;
+
+}
+
+.footer-col a:hover{
+background-color: #103163;
+color:white;
+
+
+
+}
+
+
+/* CONTACT */
+
+.footer-contact p{
+
+display:flex;
+align-items:center;
+
+gap:10px;
+
+font-size:14px;
+
+color:#6b7280;
+
+margin-bottom:12px;
+
+}
+
+.footer-contact svg{
+
+color:#21345e;
+
+}
+
+
+/* BOTTOM BAR (ONLY THIS PART DARK) */
+
+.footer-bottom{
+
+width:100%;
+
+background:#103163;
+
+color:white;
+
+text-align:center;
+
+padding:1px 0;
+
+font-size:13px;
+
+
+
+}
+
+.footer{
+width:100%;
+background:#ffffff;
+margin-top:100px;
+border-top:1px solid #e5e7eb;
+
+position:relative; /* IMPORTANT */
+}
+
+
+/* SCROLL TOP BUTTON */
+
+.footer-scroll-top{
+
+position:absolute;
+
+right:40px;   /* move near contact column */
+bottom:120px;
+width:42px;
+height:42px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:black;
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:all .3s ease;
+
+}
+
+
+/* HOVER */
+
+.footer-scroll-top:hover{
+
+background:#ffffff;
+
+border:#362eca 4px solid;
+
+color:black;
+
+transform:translateY(-4px);
+
+}
+
+@media(max-width:768px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+gap:30px;
+
+}
+
+
+
+
+
+}

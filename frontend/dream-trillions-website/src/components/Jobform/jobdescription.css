@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: -50px;
   padding: 40px 20px 60px;
   box-sizing: border-box;
 }
@@ -464,6 +465,7 @@
 @media (max-width: 992px) {
   .job-description-container {
     padding: 32px 18px 50px;
+      margin-top:-40px;
   }
 
   .job-card-main {

@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
         <li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li>
         <li><NavLink to="/careers" className={navLinkClass}>Careers</NavLink></li>
         <li><NavLink to="/blog" className={navLinkClass}>Blog</NavLink></li>
-        <li><NavLink to="/contact" className={navLinkClass}>Contact</NavLink></li>
+        {/* <li><NavLink to="/contact" className={navLinkClass}>Contact</NavLink></li> */}
 
       </ul>
 
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
 
       <div className="navbar-cta">
         <NavLink to="/get-quote" className="cta-button">
-          Get a Quote
+          Get in touch
         </NavLink>
       </div>
 
