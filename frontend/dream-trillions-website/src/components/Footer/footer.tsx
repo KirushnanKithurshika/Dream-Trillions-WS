@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
 
           <div className="footer-contact">
             <p><FontAwesomeIcon icon={faLocationDot} /> Sri Lanka</p>
-            <p><FontAwesomeIcon icon={faPhone} /> +94 77 000 0000</p>
+            <p><FontAwesomeIcon icon={faPhone} /> +94 713339201</p>
             <p><FontAwesomeIcon icon={faEnvelope} /> info@dreamtrillions.com</p>
           </div>
         </div>

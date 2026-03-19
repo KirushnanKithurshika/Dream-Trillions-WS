@@ -1,5 +1,5 @@
 :root {
-background-color: rgb(255, 255, 255);
+ background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

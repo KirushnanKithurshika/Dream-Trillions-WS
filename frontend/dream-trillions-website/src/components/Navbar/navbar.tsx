@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
       {/* CTA */}
 
       <div className="navbar-cta">
-        <NavLink to="/get-quote" className="cta-button">
+        <NavLink to="/contact" className="cta-button">
           Get in touch
         </NavLink>
       </div>
