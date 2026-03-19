@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/HomePage/homePage";
@@ -5,8 +6,15 @@ import Careers from "./pages/Career/career";
 import Services from "./pages/Services/service";
 import Contact from "./pages/Contact/contact";
 import About from "./pages/Aboutus/aboutus";
+import Loader from "./pages/Loader/loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  if (loading) {
+    return <Loader onFinish={() => setLoading(false)} />;
+  }
+
   return (
     <BrowserRouter>
       <Routes>

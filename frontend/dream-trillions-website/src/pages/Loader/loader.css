@@ -1,0 +1,42 @@
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef2f7;
+  z-index: 9999;
+}
+
+.logo-progress-box {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.logo-dark-base,
+.logo-original-color {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* remaining area */
+.logo-dark-base {
+  filter: grayscale(0.5) brightness(0.25);
+  opacity: 0.3;
+}
+
+/* loaded area */
+.logo-progress-reveal {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  transition: clip-path 0.18s linear;
+}
+
+.logo-original-color {
+  filter: none;
+}
