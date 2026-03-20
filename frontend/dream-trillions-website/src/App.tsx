@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter,BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/HomePage/homePage";
 import Careers from "./pages/Career/career";
@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<MainLayout />}>
           <Route index element={<Home />} />
@@ -26,7 +26,7 @@ function App() {
           <Route path="about" element={<About />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
